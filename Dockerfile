@@ -30,6 +30,9 @@ RUN \
   apt-get update && \
   apt-get install -y --no-install-recommends \
     google-chrome-stable=${CHROME_VERSION} && \
+  apt-get install -y --no-install-recommends \
+    vim net-tools && \
+  apt install libnginx-mod-stream && \
   echo "**** cleanup ****" && \
   apt-get autoclean && \
   rm -rf \
@@ -43,5 +46,7 @@ COPY /root /
 
 # ports and volumes
 EXPOSE 3000
-
+EXPOSE 9222
+EXPOSE 3001
+EXPOSE 3022
 VOLUME /config

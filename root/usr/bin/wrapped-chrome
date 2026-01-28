@@ -13,6 +13,16 @@ ${BIN} \
   --password-store=basic \
   --simulate-outdated-no-au='Tue, 31 Dec 2099 23:59:59 GMT' \
   --start-maximized \
+  --remote-debugging-port=9222 \
+  --disable-dev-shm-usage \
+  --disable-setuid-sandbox \
+  --no-sandbox \
+  --force-dark-mode \
+  --ignore-certificate-errors \
+  --no-sandbox \
+  --disable-blink-features=AutomationControlled \
+  --disable-blink-features \
+  --disable-seccomp-filter-sandbox \
   --test-type \
-  --user-data-dir \
+  --user-data-dir=/tmp/chrome_dev_profile \
    "$@" > /dev/null 2>&1
