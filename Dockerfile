@@ -46,7 +46,7 @@ COPY /root /
 
 # ports and volumes
 EXPOSE 3000
-EXPOSE 9222
 EXPOSE 3001
-EXPOSE 3022
+EXPOSE 3222
+
 VOLUME /config
