@@ -15,14 +15,22 @@ ${BIN} \
   --start-maximized \
   --remote-debugging-port=9222 \
   --disable-dev-shm-usage \
+  --disable-smooth-scrolling \
+  --disable-features=TranslateUI,LanguageDetection,MediaRouter \
+  --disable-crash-reporter \
   --disable-setuid-sandbox \
-  --no-sandbox \
-  --force-dark-mode \
-  --ignore-certificate-errors \
-  --no-sandbox \
   --disable-blink-features=AutomationControlled \
   --disable-blink-features \
+  --disable-component-update \
+  --disable-notifications \
+  --disable-field-trial-config \
+  --disable-search-engine-choice-screen \
+  --disable-component-update \
+  --no-default-browser-check \
+  --no-pings \
   --disable-seccomp-filter-sandbox \
+  --force-dark-mode \
+  --ignore-certificate-errors \
   --test-type \
   --user-data-dir=/tmp/chrome_dev_profile \
    "$@" > /dev/null 2>&1
